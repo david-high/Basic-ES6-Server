@@ -16,6 +16,8 @@ import routes from "./routes/main.routes.js";
 // constants
 const app = express();
 
+app.use(logger("short"));
+
 // routes
 app.use('/', routes);
 
